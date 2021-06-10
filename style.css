@@ -22,5 +22,29 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
     align-content: center;
-    max-width: 1484px;
+    max-width: 1428px;
+}
+
+.btnComplete{
+    border-radius: 5px;
+    min-height: 25px;
+    min-width: 170px;
+    margin: 5px;
+    font-size: 28px;
+    background-color: #5781e1;
+    color: #fff;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btnComplete:hover{
+    cursor: pointer;
+    background-color: #1f318e !important;
+    color: #ffffff !important;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.divBtn{
+    margin: 0 auto;
 }
