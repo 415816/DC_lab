@@ -1,7 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; 
+}
+body{
+     background: #efefef;
 }
 
 .divForm{
@@ -9,9 +12,15 @@
     min-width: 700px;
     margin: 5px;
     max-width: 700px;
+    background: #fff;
+    margin: 2px;
+    padding: 4px;
 }
 
 .question-container{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+    max-width: 1484px;
 }
