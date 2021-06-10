@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.divForm{
+    border: 1px solid black;
+    min-width: 700px;
+    margin: 5px;
+    max-width: 700px;
+}
+
+.question-container{
+    display: flex;
+    flex-wrap: wrap;
+}
