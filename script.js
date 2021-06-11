@@ -29,3 +29,220 @@ const que28 = document.querySelectorAll('.que28');
 const que29 = document.querySelectorAll('.que29'); 
 const que30 = document.querySelectorAll('.que30'); 
 const btnComplete = document.querySelector('.btnComplete'); 
+let score;
+const question1 = document.querySelector('.question1');
+const question2 = document.querySelector('.question2');
+const question3 = document.querySelector('.question3');
+const question4 = document.querySelector('.question4');
+const question5 = document.querySelector('.question5');
+const question6 = document.querySelector('.question6');
+const question7 = document.querySelector('.question7');
+const question8 = document.querySelector('.question8');
+const question9 = document.querySelector('.question9');
+const question10 = document.querySelector('.question10');
+const question11 = document.querySelector('.question11');
+const question12 = document.querySelector('.question12');
+const question13 = document.querySelector('.question13');
+const question14 = document.querySelector('.question14');
+const question15 = document.querySelector('.question15');
+const question16 = document.querySelector('.question16');
+const question17 = document.querySelector('.question17');
+const question18 = document.querySelector('.question18');
+const question19 = document.querySelector('.question19');
+const question20 = document.querySelector('.question20');
+const question21 = document.querySelector('.question21');
+const question22 = document.querySelector('.question22');
+const question23 = document.querySelector('.question23');
+const question24 = document.querySelector('.question24');
+const question25 = document.querySelector('.question25');
+const question26 = document.querySelector('.question26');
+const question27 = document.querySelector('.question27');
+const question28 = document.querySelector('.question28');
+const question29 = document.querySelector('.question29');
+const question30 = document.querySelector('.question30');
+
+
+
+function checkAnswers(){
+    score = 0;
+  
+    if((que1[3].checked == true) && (que1[0].checked == false) && (que1[1].checked == false) && (que1[2].checked == false)){
+        score +=1;
+    } else {
+        question1.setAttribute("name", "badAnswer");
+    }
+  
+    if((que2[0].checked == false) && (que2[1].checked == false) && (que2[2].checked == true) && (que2[3].checked == false)){
+        score +=1;
+    } else {
+        question2.setAttribute("name", "badAnswer");
+    }
+  
+    if((que3[0].checked == false) && (que3[1].checked == true) && (que3[2].checked == false) && (que3[3].checked == false)){
+        score +=1;
+    } else {
+        question3.setAttribute("name", "badAnswer");
+    }
+  
+    if((que4[0].checked == false) && (que4[1].checked == true) && (que4[2].checked == false) && (que4[3].checked == false)){
+        score +=1;
+    } else {
+        question4.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que5[0].checked == false) && (que5[1].checked == false) && (que5[2].checked == true) && (que5[3].checked == false)){
+        score +=1;
+    } else {
+        question5.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que6[0].checked == true) && (que6[1].checked == false) && (que6[2].checked == false) && (que6[3].checked == false)){
+        score +=1;
+    } else {
+        question6.setAttribute("name", "badAnswer");
+    }
+
+    if((que7[0].checked == true) && (que7[1].checked == false) && (que7[2].checked == false) && (que7[3].checked == false)){
+        score +=1;
+    } else {
+        question7.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que8[0].checked == false) && (que8[1].checked == true) && (que8[2].checked == false) && (que8[3].checked == false)){
+        score +=1;
+    } else {
+        question8.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que9[0].checked == false) && (que9[1].checked == false) && (que9[2].checked == true) && (que9[3].checked == false)){
+        score +=1;
+    } else {
+        question9.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que10[0].checked == true) && (que10[1].checked == false) && (que10[2].checked == false) && (que10[3].checked == false)){
+        score +=1;
+    } else {
+        question10.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que11[0].checked == false) && (que11[1].checked == true) && (que11[2].checked == false) && (que11[3].checked == false)){
+        score +=1;
+    } else {
+        question11.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que12[0].checked == false) && (que12[1].checked == false) && (que12[2].checked == true) && (que12[3].checked == false)){
+        score +=1;
+    } else {
+        question12.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que13[0].checked == false) && (que13[1].checked == false) && (que13[2].checked == false) && (que13[3].checked == true)){
+        score +=1;
+    } else {
+        question13.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que14[0].checked == false) && (que14[1].checked == true) && (que14[2].checked == false) && (que14[3].checked == false)){
+        score +=1;
+    } else {
+        question14.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que15[0].checked == ) && (que15[1].checked == ) && (que15[2].checked == ) && (que15[3].checked == )){
+        score +=1;
+    } else {
+        question15.setAttribute("name", "badAnswer");
+    }
+  
+    if((que16[0].checked == ) && (que16[1].checked == ) && (que16[2].checked == ) && (que16[3].checked == )){
+        score +=1;
+    } else {
+        question16.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que17[0].checked == ) && (que17[1].checked == ) && (que17[2].checked == ) && (que17[3].checked == )){
+        score +=1;
+    } else {
+        question17.setAttribute("name", "badAnswer");
+    }
+  
+    if((que18[0].checked == ) && (que18[1].checked == ) && (que18[2].checked == ) && (que18[3].checked == )){
+        score +=1;
+    } else {
+        question18.setAttribute("name", "badAnswer");
+    }
+  
+    if((que19[0].checked == ) && (que19[1].checked == ) && (que19[2].checked == ) && (que19[3].checked == )){
+        score +=1;
+    } else {
+        question19.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que20[0].checked == ) && (que20[1].checked == ) && (que20[2].checked == ) && (que20[3].checked == )){
+        score +=1;
+    } else {
+        question20.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que21[0].checked == ) && (que21[1].checked == ) && (que21[2].checked == ) && (que21[3].checked == )){
+        score +=1;
+    } else {
+        question21.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que22[0].checked == ) && (que22[1].checked == ) && (que22[2].checked == ) && (que22[3].checked == )){
+        score +=1;
+    } else {
+        question22.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que23[0].checked == ) && (que23[1].checked == ) && (que23[2].checked == ) && (que23[3].checked == )){
+        score +=1;
+    } else {
+        question23.setAttribute("name", "badAnswer");
+    }
+   
+    if((que24[0].checked == ) && (que24[1].checked == ) && (que24[2].checked == ) && (que24[3].checked == )){
+        score +=1;
+    } else {
+        question24.setAttribute("name", "badAnswer");
+    }
+ 
+    if((que25[0].checked == ) && (que25[1].checked == ) && (que25[2].checked == ) && (que25[3].checked == )){
+        score +=1;
+    } else {
+        question25.setAttribute("name", "badAnswer");
+    }
+  
+    if((que26[0].checked == ) && (que26[1].checked == ) && (que26[2].checked == ) && (que26[3].checked == )){
+        score +=1;
+    } else {
+        question26.setAttribute("name", "badAnswer");
+    }
+   
+    if((que27[0].checked == ) && (que27[1].checked == ) && (que27[2].checked == ) && (que27[3].checked == )){
+        score +=1;
+    } else {
+        question27.setAttribute("name", "badAnswer");
+    }
+   
+    if((que28[0].checked == ) && (que28[1].checked == ) && (que28[2].checked == ) && (que28[3].checked == )){
+        score +=1;
+    } else {
+        question28.setAttribute("name", "badAnswer");
+    }
+    
+    if((que29[0].checked == ) && (que29[1].checked == ) && (que29[2].checked == ) && (que29[3].checked == )){
+        score +=1;
+    } else {
+        question29.setAttribute("name", "badAnswer");
+    }
+    
+    if((que30[0].checked == ) && (que30[1].checked == ) && (que30[2].checked == ) && (que30[3].checked == )){
+        score +=1;
+    } else {
+        question30.setAttribute("name", "badAnswer");
+    }
+}
