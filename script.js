@@ -150,97 +150,97 @@ function checkAnswers(){
         question14.setAttribute("name", "badAnswer");
     }
  
-    if((que15[0].checked == ) && (que15[1].checked == ) && (que15[2].checked == ) && (que15[3].checked == )){
+    if(((que15[0].checked == true) || (que15[3].checked == true)) && (que15[1].checked == false) && (que15[2].checked == false)){
         score +=1;
     } else {
         question15.setAttribute("name", "badAnswer");
     }
   
-    if((que16[0].checked == ) && (que16[1].checked == ) && (que16[2].checked == ) && (que16[3].checked == )){
+    if((que16[0].checked == true) && (que16[1].checked == false) && (que16[2].checked == false) && (que16[3].checked == false)){
         score +=1;
     } else {
         question16.setAttribute("name", "badAnswer");
     }
  
-    if((que17[0].checked == ) && (que17[1].checked == ) && (que17[2].checked == ) && (que17[3].checked == )){
+    if((que17[0].checked == false) && (que17[1].checked == false) && (que17[2].checked == true)){
         score +=1;
     } else {
         question17.setAttribute("name", "badAnswer");
     }
   
-    if((que18[0].checked == ) && (que18[1].checked == ) && (que18[2].checked == ) && (que18[3].checked == )){
+    if((que18[0].checked == true) && (que18[1].checked == false) && (que18[2].checked == false)){
         score +=1;
     } else {
         question18.setAttribute("name", "badAnswer");
     }
   
-    if((que19[0].checked == ) && (que19[1].checked == ) && (que19[2].checked == ) && (que19[3].checked == )){
+    if((que19[0].checked == false) && (que19[1].checked == false) && (que19[2].checked == true)){
         score +=1;
     } else {
         question19.setAttribute("name", "badAnswer");
     }
  
-    if((que20[0].checked == ) && (que20[1].checked == ) && (que20[2].checked == ) && (que20[3].checked == )){
+    if((que20[0].checked == true) && (que20[1].checked == false) && (que20[2].checked == false) && (que20[3].checked == false)){
         score +=1;
     } else {
         question20.setAttribute("name", "badAnswer");
     }
  
-    if((que21[0].checked == ) && (que21[1].checked == ) && (que21[2].checked == ) && (que21[3].checked == )){
+    if((que21[0].checked == false) && (que21[1].checked == false) && (que21[2].checked == true)){
         score +=1;
     } else {
         question21.setAttribute("name", "badAnswer");
     }
  
-    if((que22[0].checked == ) && (que22[1].checked == ) && (que22[2].checked == ) && (que22[3].checked == )){
+    if((que22[0].checked == false) && (que22[1].checked == true) && (que22[2].checked == false)){
         score +=1;
     } else {
         question22.setAttribute("name", "badAnswer");
     }
  
-    if((que23[0].checked == ) && (que23[1].checked == ) && (que23[2].checked == ) && (que23[3].checked == )){
+    if((que23[0].checked == false) && (que23[1].checked == false) && (que23[2].checked == true) && (que23[3].checked == false)){
         score +=1;
     } else {
         question23.setAttribute("name", "badAnswer");
     }
    
-    if((que24[0].checked == ) && (que24[1].checked == ) && (que24[2].checked == ) && (que24[3].checked == )){
+    if((que24[0].checked == false) && (que24[1].checked == true) && (que24[2].checked == false) && (que24[3].checked == false)){
         score +=1;
     } else {
         question24.setAttribute("name", "badAnswer");
     }
  
-    if((que25[0].checked == ) && (que25[1].checked == ) && (que25[2].checked == ) && (que25[3].checked == )){
+    if((que25[0].checked == false) && (que25[1].checked == true) && (que25[2].checked == false) && (que25[3].checked == false)){
         score +=1;
     } else {
         question25.setAttribute("name", "badAnswer");
     }
   
-    if((que26[0].checked == ) && (que26[1].checked == ) && (que26[2].checked == ) && (que26[3].checked == )){
+    if((que26[0].checked == false) && (que26[1].checked == true) && (que26[2].checked == false) && (que26[3].checked == false)){
         score +=1;
     } else {
         question26.setAttribute("name", "badAnswer");
     }
    
-    if((que27[0].checked == ) && (que27[1].checked == ) && (que27[2].checked == ) && (que27[3].checked == )){
+    if((que27[0].checked == false) && (que27[1].checked == true) && (que27[2].checked == false)){
         score +=1;
     } else {
         question27.setAttribute("name", "badAnswer");
     }
    
-    if((que28[0].checked == ) && (que28[1].checked == ) && (que28[2].checked == ) && (que28[3].checked == )){
+    if(((que28[0].checked == true) || (que28[1].checked == true)) && (que28[2].checked == false)){
         score +=1;
     } else {
         question28.setAttribute("name", "badAnswer");
     }
     
-    if((que29[0].checked == ) && (que29[1].checked == ) && (que29[2].checked == ) && (que29[3].checked == )){
+    if((que29[0].checked == true) && (que29[1].checked == false) && (que29[2].checked == false) && (que29[3].checked == false)){
         score +=1;
     } else {
         question29.setAttribute("name", "badAnswer");
     }
     
-    if((que30[0].checked == ) && (que30[1].checked == ) && (que30[2].checked == ) && (que30[3].checked == )){
+    if((que30[0].checked == true) && (que30[1].checked == false) && (que30[2].checked == false) && (que30[3].checked == false)){
         score +=1;
     } else {
         question30.setAttribute("name", "badAnswer");
