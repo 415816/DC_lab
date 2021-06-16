@@ -71,6 +71,8 @@ const endContainer = document.querySelector('.endContainer');
 let toFio = document.querySelector('#toFio');
 let scor = document.querySelector('#scor');
 let appraisal = document.querySelector('#appraisal');
+let passCloseMessage = document.querySelector('#passCloseMessage');
+let closeEndMessage = document.querySelector('.closeEndMessage');
 
 
 btnComplete.onclick = () => {
@@ -81,6 +83,7 @@ btnComplete.onclick = () => {
     scor.innerHTML = score;
     endContainer.style.display = "block";
 }
+
 
 function checkAnswers(){
     score = 0;
@@ -288,6 +291,13 @@ closeStartMessage.onclick = () => {
           }, 1000);
     }
 }
+
+closeEndMessage.onclick = () => {
+    if (passCloseMessage.value == 23) {
+    endContainer.style.display = "none";
+    passCloseMessage.value = '';
+  }
+};
 
 function colorizedBedAns() {
   for (let i = 0; i < 30; i++) {
