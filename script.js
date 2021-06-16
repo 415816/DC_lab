@@ -60,8 +60,13 @@ const question27 = document.querySelector('.question27');
 const question28 = document.querySelector('.question28');
 const question29 = document.querySelector('.question29');
 const question30 = document.querySelector('.question30');
+const divForm = document.querySelectorAll('.divForm');
 
-
+btnComplete.onclick = () => {
+    checkAnswers();
+    colorizedBedAns();
+    console.log(score);
+}
 
 function checkAnswers(){
     score = 0;
@@ -245,4 +250,12 @@ function checkAnswers(){
     } else {
         question30.setAttribute("name", "badAnswer");
     }
+}
+
+function colorizedBedAns() {
+  for (let i = 0; i < 30; i++) {
+    if (divForm[i].getAttribute("name") == "badAnswer") {
+      divForm[i].style.boxShadow = "0 0 10px red";
+    }
+  }
 }
