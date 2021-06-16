@@ -61,11 +61,25 @@ const question28 = document.querySelector('.question28');
 const question29 = document.querySelector('.question29');
 const question30 = document.querySelector('.question30');
 const divForm = document.querySelectorAll('.divForm');
+const time = 15 * 60;
+const r = document.getElementById('r');
+let tmp = time;
+const closeStartMessage = document.querySelector('.closeStartMessage');
+let FIO = document.querySelector('#FIO');
+const startContainer = document.querySelector('.startContainer');
+const endContainer = document.querySelector('.endContainer');
+let toFio = document.querySelector('#toFio');
+let scor = document.querySelector('#scor');
+let appraisal = document.querySelector('#appraisal');
+
 
 btnComplete.onclick = () => {
     checkAnswers();
     colorizedBedAns();
     console.log(score);
+    toFio.innerHTML = FIO.value;
+    scor.innerHTML = score;
+    endContainer.style.display = "block";
 }
 
 function checkAnswers(){
@@ -250,12 +264,35 @@ function checkAnswers(){
     } else {
         question30.setAttribute("name", "badAnswer");
     }
+
+
+    if(score > 19) {
+        appraisal.innerHTML = "зачтены!";
+    } else {appraisal.innerHTML = "не зачтены. Пересдача возможна по вторникам. Время и аудиторию Вы можете уточнить на стенде у 307 аудитории либо в группе ВК: https://vk.com/suti_roat";}
+}
+
+closeStartMessage.onclick = () => {
+    if(FIO.value != 0){
+        startContainer.style.display = "none";
+        setInterval(function () {
+            let c = tmp--;
+            let m = (c / 60) >> 0;
+            let s = c - m * 60 + "";
+            r.textContent = "Осталось " + m + ":" + (s.length > 1 ? "" : "0") + s;
+            tmp != 0 || (tmp = time);
+            if (m == 0 && s == 1) {
+              checkAnswers();
+              colorizedBedAns();
+              console.log(score);
+            }
+          }, 1000);
+    }
 }
 
 function colorizedBedAns() {
   for (let i = 0; i < 30; i++) {
     if (divForm[i].getAttribute("name") == "badAnswer") {
-      divForm[i].style.boxShadow = "0 0 10px red";
+      divForm[i].style.boxShadow = "0 0 5px red";
     }
   }
 }
