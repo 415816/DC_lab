@@ -60,6 +60,40 @@ const question27 = document.querySelector('.question27');
 const question28 = document.querySelector('.question28');
 const question29 = document.querySelector('.question29');
 const question30 = document.querySelector('.question30');
+const lab1 = document.querySelectorAll('.lab1');
+const lab2 = document.querySelectorAll('.lab2');
+const lab3 = document.querySelectorAll('.lab3');
+const lab4 = document.querySelectorAll('.lab4');
+const lab5 = document.querySelectorAll('.lab5');
+const lab6 = document.querySelectorAll('.lab6');
+const lab7 = document.querySelectorAll('.lab7');
+const lab8 = document.querySelectorAll('.lab8');
+const lab9 = document.querySelectorAll('.lab9');
+const lab10 = document.querySelectorAll('.lab10');
+const lab11 = document.querySelectorAll('.lab11');
+const lab12 = document.querySelectorAll('.lab12');
+const lab13 = document.querySelectorAll('.lab13');
+const lab14 = document.querySelectorAll('.lab14');
+const lab15 = document.querySelectorAll('.lab15');
+const lab16 = document.querySelectorAll('.lab16');
+const lab17 = document.querySelectorAll('.lab17');
+const lab18 = document.querySelectorAll('.lab18');
+const lab19 = document.querySelectorAll('.lab19');
+const lab20 = document.querySelectorAll('.lab20');
+const lab21 = document.querySelectorAll('.lab21');
+const lab22 = document.querySelectorAll('.lab22');
+const lab23 = document.querySelectorAll('.lab23');
+const lab24 = document.querySelectorAll('.lab24');
+const lab25 = document.querySelectorAll('.lab25');
+const lab26 = document.querySelectorAll('.lab26');
+const lab27 = document.querySelectorAll('.lab27');
+const lab28 = document.querySelectorAll('.lab28');
+const lab29 = document.querySelectorAll('.lab29');
+const lab30 = document.querySelectorAll('.lab30');
+
+
+
+
 const divForm = document.querySelectorAll('.divForm');
 const time = 15 * 60;
 const r = document.getElementById('r');
@@ -293,7 +327,7 @@ closeStartMessage.onclick = () => {
 }
 
 closeEndMessage.onclick = () => {
-    if (passCloseMessage.value == 23) {
+    if (passCloseMessage.value == 90) {
     endContainer.style.display = "none";
     passCloseMessage.value = '';
   }
@@ -302,7 +336,38 @@ closeEndMessage.onclick = () => {
 function colorizedBedAns() {
   for (let i = 0; i < 30; i++) {
     if (divForm[i].getAttribute("name") == "badAnswer") {
-      divForm[i].style.boxShadow = "0 0 5px red";
+        divForm[i].style.boxShadow = "0 0 5px red";
+        lab1[3].style.textDecoration = "underline";
+        lab2[2].style.textDecoration = "underline";
+        lab3[1].style.textDecoration = "underline";
+        lab4[1].style.textDecoration = "underline";
+        lab5[2].style.textDecoration = "underline";
+        lab6[0].style.textDecoration = "underline";
+        lab7[0].style.textDecoration = "underline";
+        lab8[1].style.textDecoration = "underline";
+        lab9[2].style.textDecoration = "underline";
+        lab10[0].style.textDecoration = "underline";
+        lab11[1].style.textDecoration = "underline";
+        lab12[2].style.textDecoration = "underline";
+        lab13[3].style.textDecoration = "underline";
+        lab14[1].style.textDecoration = "underline";
+        lab15[0].style.textDecoration = "underline";
+        lab16[0].style.textDecoration = "underline";
+        lab17[2].style.textDecoration = "underline";
+        lab18[0].style.textDecoration = "underline";
+        lab19[2].style.textDecoration = "underline";
+        lab20[0].style.textDecoration = "underline";
+        lab21[2].style.textDecoration = "underline";
+        lab22[1].style.textDecoration = "underline";
+        lab23[2].style.textDecoration = "underline";
+        lab24[1].style.textDecoration = "underline";
+        lab25[1].style.textDecoration = "underline";
+        lab26[1].style.textDecoration = "underline";
+        lab27[1].style.textDecoration = "underline";
+        lab28[0].style.textDecoration = "underline";
+        lab28[1].style.textDecoration = "underline";
+        lab29[0].style.textDecoration = "underline";
+        lab30[0].style.textDecoration = "underline";
     }
-  }
+}
 }
