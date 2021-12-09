@@ -17,6 +17,12 @@ body{
     padding: 4px;
 }
 
+.question1,  .question2,  .question3,  .question4,  .question5,  .question6,  .question7,  .question8,  .question9,  .question10,
+.question11, .question12, .question13, .question14, .question15, .question16, .question17, .question18, .question19, .question20,
+.question21, .question22, .question23, .question24, .question25, .question26, .question27, .question28, .question29, .question30 {
+    display: none;
+}
+
 .question-container{
     display: flex;
     max-width: 1500px;
@@ -28,7 +34,7 @@ body{
     max-width: 1500px;
 }
 
-.btnComplete, .closeStartMessage, .closeEndMessage{
+.btnComplete, .closeStartMessage, .closeEndMessage, .btnNextQuestion{
     border-radius: 5px;
     min-height: 25px;
     min-width: 170px;
@@ -41,7 +47,7 @@ body{
     font-weight: bold;
 }
 
-.btnComplete:hover, .closeStartMessage:hover, .closeEndMessage:hover{
+.btnComplete:hover, .closeStartMessage:hover, .closeEndMessage:hover, .btnNextQuestion:hover{
     cursor: pointer;
     background-color: #1f318e !important;
     color: #ffffff !important;
@@ -104,4 +110,17 @@ body{
     background-color: #efefef;
     text-align: center;
     font-size: 30px;
+}
+.questNumber{
+    border: 1px solid black;
+    width: 55px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+}
+
+.questNumberBlock1, .questNumberBlock2, .questNumberBlock3 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1055px;
 }
