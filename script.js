@@ -321,7 +321,15 @@ function checkAnswers() {
     }
 }
 
-closeStartMessage.onclick = () => {
+closeStartMessage.onclick = () => startTest();
+FIO.addEventListener('keydown', function(e) {
+    if (e.keyCode === 13) {
+        startTest();
+    }
+})
+
+
+const startTest = () => {
     if (FIO.value != 0) {
         startContainer.style.display = "none";
         setInterval(function () {
