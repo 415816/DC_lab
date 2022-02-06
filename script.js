@@ -127,6 +127,10 @@ btnComplete.onclick = () => {
         questionsArray[i].style.display = "block";
     }
     endContainer.style.display = "block";
+    if(score >= 20){
+        endContainer.style.background = "rgba(33, 189, 1, 0.98)";
+    }
+    else {endContainer.style.background = "rgba(196, 0, 0, 0.98)";}
 }
 
 
