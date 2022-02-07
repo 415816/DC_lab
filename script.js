@@ -352,11 +352,18 @@ const startTest = () => {
 }
 
 closeEndMessage.onclick = () => {
-    if (passCloseMessage.value == 45) {
+    if (passCloseMessage.value == 987) {
         endContainer.style.display = "none";
         passCloseMessage.value = '';
     }
 };
+
+passCloseMessage.addEventListener('keydown', function(e) {
+    if ((e.keyCode === 13) &&  (passCloseMessage.value == 987)) {
+        endContainer.style.display = "none";
+        passCloseMessage.value = '';
+    }
+})
 
 function colorizedBedAns() {
     for (let i = 0; i < 30; i++) {
